@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sunwave:Config xmlns:sunwave="http://www.sunwavecorp.com/some-location" platform="GM/龙旗/信利L2300-MSM8940-QSEE-SW9651">
+  <feature>
+    <key_emulation cname="按键功能开关" desc="默认：false" format="boolean">false</key_emulation>
+    <navigation cname="导航功能开关" desc="默认：false" format="boolean">false</navigation>
+    <unique_finger cname="重复手指录入判断开关" desc="默认：true" format="boolean">true</unique_finger>       
+  </feature>
+  
+  <algo>
+    <enrolling_num_max cname="单模板录入最大次数" desc="大于8。默认: 15" format="array" options="10次|11次|12次|13次|14次|15次|16次|17次|18次|19次|20次" values="10|11|12|13|14|15|16|17|18|19|20">15</enrolling_num_max>
+    <enrolling_samples cname="单模板录入次数" desc="不得大于单模板录入最大次数。默认: 动态计算" format="array" options="动态计算|8次|9次|10次|11次|12次|13次|14次|15次" values="0|8|9|10|11|12|13|14|15">0</enrolling_samples>
+  </algo>
+    
+  <device>
+  </device>
+  
+  <sensor>
+
+  </sensor>
+  
+  <driver>
+
+  </driver>
+  
+  <navigation>         
+  </navigation>  
+  
+  <diagnosis>
+  </diagnosis>
+  
+  <solution>
+    <qsee_spi_id cname="QSEE SPI 设备号" desc="QSEE SPI 设备号。默认：QSEE_SPI_DEVICE_6" format="array" options="QSEE_SPI_DEVICE_1|QSEE_SPI_DEVICE_2|QSEE_SPI_DEVICE_3|QSEE_SPI_DEVICE_4|QSEE_SPI_DEVICE_5|QSEE_SPI_DEVICE_6|QSEE_SPI_DEVICE_7|QSEE_SPI_DEVICE_8|QSEE_SPI_DEVICE_9|QSEE_SPI_DEVICE_10|QSEE_SPI_DEVICE_11|QSEE_SPI_DEVICE_12" values="1|2|3|4|5|6|7|8|9|10|11|12">6</qsee_spi_id>
+  </solution>
+</sunwave:Config>
+
+

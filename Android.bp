@@ -19,6 +19,18 @@
 soong_namespace {
 }
 
+android_app_import {
+	name: "dpmserviceapp",
+	owner: "GM",
+	apk: "proprietary/product/priv-app/dpmserviceapp/dpmserviceapp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
 cc_prebuilt_library_shared {
 	name: "com.quicinc.cne.api@1.0",
 	owner: "GM",

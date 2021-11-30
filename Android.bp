@@ -20,6 +20,113 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+	name: "com.quicinc.cne.api@1.0",
+	owner: "GM",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/product/lib64/com.quicinc.cne.api@1.0.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.quicinc.cne.api@1.1",
+	owner: "GM",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/product/lib64/com.quicinc.cne.api@1.1.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.quicinc.cne.constants@1.0",
+	owner: "GM",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/product/lib64/com.quicinc.cne.constants@1.0.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.quicinc.cne.constants@2.0",
+	owner: "GM",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/product/lib64/com.quicinc.cne.constants@2.0.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.quicinc.cne.constants@2.1",
+	owner: "GM",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/product/lib64/com.quicinc.cne.constants@2.1.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "CneApp",
+	owner: "GM",
+	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "IWlanService",
+	owner: "GM",
+	apk: "proprietary/vendor/app/IWlanService/IWlanService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libaudio_log_utils",
 	owner: "GM",
 	strip: {
